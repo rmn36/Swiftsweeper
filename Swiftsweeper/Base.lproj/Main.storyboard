@@ -63,19 +63,14 @@
             </objects>
             <point key="canvasLocation" x="234.40000000000001" y="345.5333333333333"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Board View Controller-->
         <scene sceneID="uh3-oa-fcz">
             <objects>
-                <viewController id="GMv-G2-eNq" sceneMemberID="viewController">
+                <viewController id="GMv-G2-eNq" customClass="GameBoardViewController" customModule="Swiftsweeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sku-6q-tRi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="B3B-65-zQX">
-                                <rect key="frame" x="20" y="129" width="280" height="280"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N7P-R5-B9V">
                                 <rect key="frame" x="20" y="417" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,9 +98,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" id="B3B-65-zQX">
+                                <rect key="frame" x="20" y="129" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iFI-Mb-Jz9">
+                                <rect key="frame" x="122" y="475" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGamePressed" destination="GMv-G2-eNq" eventType="touchUpInside" id="eJn-nK-K4o"/>
+                                    <action selector="newGamePressed:" destination="GMv-G2-eNq" eventType="touchUpInside" id="Kx1-BO-rHQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="boardView" destination="B3B-65-zQX" id="qHl-5j-mKD"/>
+                        <outlet property="movesLabel" destination="N7P-R5-B9V" id="56G-AS-9pL"/>
+                        <outlet property="timeLabel" destination="hW6-Oq-ddU" id="48F-XJ-01k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLg-nB-yNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,6 +201,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="yrJ-lB-352"/>
+        <segue reference="DRy-bY-JXL"/>
     </inferredMetricsTieBreakers>
 </document>

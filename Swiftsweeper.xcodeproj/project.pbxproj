@@ -15,6 +15,7 @@
 		D35000921A26AC8A00336758 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D35000901A26AC8A00336758 /* LaunchScreen.xib */; };
 		D350009E1A26AC8B00336758 /* SwiftsweeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D350009D1A26AC8B00336758 /* SwiftsweeperTests.swift */; };
 		D35000A81A26B02E00336758 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35000A71A26B02E00336758 /* SettingsViewController.swift */; };
+		D355A1321A2FA2F0005E171C /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1311A2FA2F0005E171C /* GameBoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D350009C1A26AC8B00336758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D350009D1A26AC8B00336758 /* SwiftsweeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftsweeperTests.swift; sourceTree = "<group>"; };
 		D35000A71A26B02E00336758 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D355A1311A2FA2F0005E171C /* GameBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				D35000841A26AC8A00336758 /* AppDelegate.swift */,
 				D35000891A26AC8A00336758 /* ViewController.swift */,
+				D355A1311A2FA2F0005E171C /* GameBoardViewController.swift */,
 				D350008B1A26AC8A00336758 /* Main.storyboard */,
 				D35000A71A26B02E00336758 /* SettingsViewController.swift */,
 				D350008E1A26AC8A00336758 /* Images.xcassets */,
@@ -221,6 +224,7 @@
 				D350008A1A26AC8A00336758 /* ViewController.swift in Sources */,
 				D35000851A26AC8A00336758 /* AppDelegate.swift in Sources */,
 				D35000881A26AC8A00336758 /* Swiftsweeper.xcdatamodeld in Sources */,
+				D355A1321A2FA2F0005E171C /* GameBoardViewController.swift in Sources */,
 				D35000A81A26B02E00336758 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +419,7 @@
 				D35000A31A26AC8B00336758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D35000A41A26AC8B00336758 /* Build configuration list for PBXNativeTarget "SwiftsweeperTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				D35000A61A26AC8B00336758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
