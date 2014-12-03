@@ -111,7 +111,6 @@
                                 </state>
                                 <connections>
                                     <action selector="newGamePressed" destination="GMv-G2-eNq" eventType="touchUpInside" id="eJn-nK-K4o"/>
-                                    <action selector="newGamePressed:" destination="GMv-G2-eNq" eventType="touchUpInside" id="Kx1-BO-rHQ"/>
                                 </connections>
                             </button>
                         </subviews>
