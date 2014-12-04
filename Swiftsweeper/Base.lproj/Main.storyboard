@@ -12,20 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bqt-4c-ACs">
-                                <rect key="frame" x="37" y="50" width="247" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Welcome to Swiftsweeper">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="39" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8YS-vA-3f3">
                                 <rect key="frame" x="122" y="278" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,18 +39,237 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gUw-Hz-mDH" kind="modal" modalTransitionStyle="partialCurl" id="v65-vI-0Tr"/>
+                                    <segue destination="egr-xU-o8N" kind="modal" modalTransitionStyle="partialCurl" id="qzc-Hw-F3n"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bqt-4c-ACs">
+                                <rect key="frame" x="37" y="90" width="247" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to Swiftsweeper">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="39" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Iym-hd-ezZ"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="234.40000000000001" y="345.5333333333333"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zlO-aL-2pF">
+            <objects>
+                <viewController id="egr-xU-o8N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mTX-mf-QTb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yB3-IE-HUz">
+                                <rect key="frame" x="122" y="120" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Easy Mode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bYx-Ck-lZG" kind="modal" modalTransitionStyle="partialCurl" id="OQg-7h-iVf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vbo-TB-U6j">
+                                <rect key="frame" x="122" y="278" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hard Mode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6GW-6n-DA6" kind="modal" modalTransitionStyle="partialCurl" id="YBQ-uS-bbl"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="GmI-y8-tdJ">
+                                <rect key="frame" x="0.0" y="19" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="High Scores!" id="1nl-Xf-Wn6">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="Ogo-fl-luX">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="oBW-od-ad8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d9D-Gq-Nlk">
+                                <rect key="frame" x="111" y="195" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medium Mode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JCm-Ml-HZV" kind="modal" modalTransitionStyle="partialCurl" id="cwD-wr-1Nu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAE-Vd-4A3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="1302"/>
+        </scene>
+        <!--High Score View Controller-->
+        <scene sceneID="ump-13-wki">
+            <objects>
+                <viewController id="bYx-Ck-lZG" customClass="HighScoreViewController" customModule="Swiftsweeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IKd-oQ-a3v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="38E-vG-IyE">
+                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qFN-QL-Guz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qFN-QL-Guz" id="5k6-mT-I4s">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bYx-Ck-lZG" id="1vP-BB-glc"/>
+                                    <outlet property="delegate" destination="bYx-Ck-lZG" id="bpA-nh-yHv"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" id="0xW-TL-QHE">
+                                <rect key="frame" x="0.0" y="19" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Easy" id="TZF-VT-wMk">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="WSx-EP-ebP">
+                                            <connections>
+                                                <segue destination="egr-xU-o8N" kind="modal" modalTransitionStyle="flipHorizontal" id="Lnj-iR-0hj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreView" destination="38E-vG-IyE" id="P9q-K1-9hy"/>
+                        <outlet property="navBar" destination="0xW-TL-QHE" id="Yz6-BF-g9g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqN-gk-04m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="1302"/>
+        </scene>
+        <!--High Score View Controller-->
+        <scene sceneID="t9D-LX-Ju4">
+            <objects>
+                <viewController id="JCm-Ml-HZV" customClass="HighScoreViewController" customModule="Swiftsweeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JwI-xw-zb4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="EUj-4Y-M3s">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Medium" id="NYj-aR-mxn">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="5XV-OJ-1qx">
+                                            <connections>
+                                                <segue destination="egr-xU-o8N" kind="modal" modalTransitionStyle="flipHorizontal" id="rcC-zM-O1K"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9vt-wJ-0d0">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="StL-qb-dW3">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="StL-qb-dW3" id="Laa-9w-pdT">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreView" destination="9vt-wJ-0d0" id="SZw-j7-A6z"/>
+                        <outlet property="navBar" destination="EUj-4Y-M3s" id="b3n-uZ-lgv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eO4-bp-pT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="1300"/>
+        </scene>
+        <!--High Score View Controller-->
+        <scene sceneID="hwq-P6-7DZ">
+            <objects>
+                <viewController id="6GW-6n-DA6" customClass="HighScoreViewController" customModule="Swiftsweeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4AO-vJ-nQI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="Kmw-R4-gt2">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Hard" id="35O-t8-y7I">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="BQm-w7-Xc9">
+                                            <connections>
+                                                <segue destination="egr-xU-o8N" kind="modal" modalTransitionStyle="flipHorizontal" id="dfA-zV-kRD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="c85-ag-WYc">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TaC-4t-diN">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TaC-4t-diN" id="yon-4j-GO9">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreView" destination="c85-ag-WYc" id="MbC-Wl-HzU"/>
+                        <outlet property="navBar" destination="Kmw-R4-gt2" id="rdq-Gf-l9m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xB3-eX-QW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="1299"/>
         </scene>
         <!--Game Board View Controller-->
         <scene sceneID="uh3-oa-fcz">
@@ -97,6 +302,11 @@
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="JPO-7c-Pis">
                                             <connections>
                                                 <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="DRy-bY-JXL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Hint" id="VYf-ET-HZE">
+                                            <connections>
+                                                <action selector="hint:" destination="GMv-G2-eNq" id="Iyt-vG-UTu"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -140,116 +350,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLg-nB-yNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="630" y="345"/>
-        </scene>
-        <!--Medium-->
-        <scene sceneID="7cz-vv-99Z">
-            <objects>
-                <viewController id="Kmu-QL-FRI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g8U-KV-ejk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="VN5-l0-343">
-                                <rect key="frame" x="0.0" y="19" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="High Scores: Medium" id="I0M-8e-h2A">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="kPd-qo-po1">
-                                            <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="arW-Re-vVd"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Medium" id="MoB-fv-3co"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jeS-Sz-vph" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-318" y="2017"/>
-        </scene>
-        <!--Hard-->
-        <scene sceneID="ZUp-Pp-jH7">
-            <objects>
-                <viewController id="Hmf-So-6Wl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EWU-0A-r08">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="27A-30-V4G">
-                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="High Scores: Hard" id="IyF-hP-AZJ">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="ExI-3I-hah">
-                                            <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="GA6-BC-s8f"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Hard" id="WJh-im-I2f"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tM7-9q-iBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="205" y="1926"/>
-        </scene>
-        <!--Easy-->
-        <scene sceneID="NRb-Se-IKb">
-            <objects>
-                <viewController id="Rkl-il-G2U" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GY6-oS-3l9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="dZY-zu-rsk">
-                                <rect key="frame" x="0.0" y="18" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="High Scores: Easy" id="wCP-hw-IKM">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="9G6-yb-hal">
-                                            <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="Xky-Po-Nqp"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Easy" id="yaA-If-9fP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JRJ-q7-1rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="234" y="1219"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="k5B-05-1fE">
-            <objects>
-                <tabBarController id="gUw-Hz-mDH" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="5e7-YD-4zi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Rkl-il-G2U" kind="relationship" relationship="viewControllers" id="Kvb-X9-Spf"/>
-                        <segue destination="Kmu-QL-FRI" kind="relationship" relationship="viewControllers" id="nK7-Hy-t57"/>
-                        <segue destination="Hmf-So-6Wl" kind="relationship" relationship="viewControllers" id="dzz-JS-Yjh"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zy-Gu-HI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-318" y="1219"/>
         </scene>
         <!--Settings-->
         <scene sceneID="3El-3x-1ML">
@@ -307,6 +407,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DRy-bY-JXL"/>
+        <segue reference="Lnj-iR-0hj"/>
+        <segue reference="oBW-od-ad8"/>
     </inferredMetricsTieBreakers>
 </document>

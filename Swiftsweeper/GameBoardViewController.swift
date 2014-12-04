@@ -17,6 +17,7 @@ class GameBoardViewController: UIViewController {
     
     var BOARD_SIZE:Int = 10
     var DIFFICULTY:UInt32 = 10
+    var hints:Int = 4
     var board:GameBoard = GameBoard(size:10 , difficulty: 10)
     var gameButtons:[GameButton] = []
     
@@ -46,12 +47,11 @@ class GameBoardViewController: UIViewController {
         else {
             return nil
         }
-        }()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        println(DIFFICULTY)
         self.board = GameBoard(size: BOARD_SIZE , difficulty: DIFFICULTY)
         self.initializeBoard()
         self.startNewGame()
@@ -74,7 +74,6 @@ class GameBoardViewController: UIViewController {
     }
     
     @IBAction func newGamePressed() {
-        println("new game");
         self.endCurrentGame()
         self.startNewGame()
     }
@@ -101,7 +100,8 @@ class GameBoardViewController: UIViewController {
             tileButton.setTitle("[x]", forState: .Normal)
             tileButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
             tileButton.setImage(nil, forState: .Normal)
-            
+            tileButton.backgroundColor = UIColor.grayColor()
+            hints = 4
         }
     }
     
@@ -192,6 +192,26 @@ class GameBoardViewController: UIViewController {
         }
     }
     
+    @IBAction func hint(sender: AnyObject) {
+        let rand:UInt32 = arc4random() % UInt32(BOARD_SIZE * BOARD_SIZE)
+        
+        if gameButtons[Int(rand)].tile.isMine &&  !gameButtons[Int(rand)].tile.isRevealed && gameButtons[Int(rand)].backgroundColor != UIColor.redColor() && hints != 0{
+            gameButtons[Int(rand)].backgroundColor = UIColor.redColor()
+            hints--
+        }
+        else if hints == 0{
+            var hintView = UIAlertView()
+            hintView.addButtonWithTitle("Ok")
+            hintView.title = "UhOh!"
+            hintView.message = "You're all out of hints."
+            hintView.show()
+            hintView.delegate = self
+        }
+        else{
+            hint(sender)
+        }
+    }
+    
     func checkWin() -> Bool{
         for g in gameButtons {
             if g.tile.isMine == false && g.tile.isRevealed == false {
@@ -223,7 +243,6 @@ class GameBoardViewController: UIViewController {
             else{
                 t.setTitle("\(t.getLabelText())", forState: .Normal)
             }
-            
             if t.titleLabel?.text == "1"{
                 t.setTitleColor(UIColor.blueColor(), forState: .Normal)
             }
@@ -239,8 +258,14 @@ class GameBoardViewController: UIViewController {
     //MARK: Alert and end game
     func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
         //start new game when the alert is dismissed
-        self.startNewGame()
+        if View.buttonTitleAtIndex(buttonIndex) == "New Game"{
+            self.startNewGame()
+        }
+        else{
+            
+        }
     }
+    
     
     func endCurrentGame() {
         self.oneSecondTimer!.invalidate()

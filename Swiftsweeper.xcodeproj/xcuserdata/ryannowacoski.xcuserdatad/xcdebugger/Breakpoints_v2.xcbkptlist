@@ -70,12 +70,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Swiftsweeper/GameBoardViewController.swift"
-            timestampString = "439374268.289083"
+            timestampString = "439380262.997131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "initializeBoard()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swiftsweeper/GameBoardViewController.swift"
+            timestampString = "439380262.997131"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "hint(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
