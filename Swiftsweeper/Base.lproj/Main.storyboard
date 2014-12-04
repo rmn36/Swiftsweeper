@@ -52,6 +52,9 @@
                                 <state key="normal" title="High Scores">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gUw-Hz-mDH" kind="modal" modalTransitionStyle="partialCurl" id="v65-vI-0Tr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -138,6 +141,116 @@
             </objects>
             <point key="canvasLocation" x="630" y="345"/>
         </scene>
+        <!--Medium-->
+        <scene sceneID="7cz-vv-99Z">
+            <objects>
+                <viewController id="Kmu-QL-FRI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g8U-KV-ejk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="VN5-l0-343">
+                                <rect key="frame" x="0.0" y="19" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="High Scores: Medium" id="I0M-8e-h2A">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="kPd-qo-po1">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="arW-Re-vVd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Medium" id="MoB-fv-3co"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeS-Sz-vph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="2017"/>
+        </scene>
+        <!--Hard-->
+        <scene sceneID="ZUp-Pp-jH7">
+            <objects>
+                <viewController id="Hmf-So-6Wl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWU-0A-r08">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="27A-30-V4G">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="High Scores: Hard" id="IyF-hP-AZJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="ExI-3I-hah">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="GA6-BC-s8f"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hard" id="WJh-im-I2f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tM7-9q-iBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="1926"/>
+        </scene>
+        <!--Easy-->
+        <scene sceneID="NRb-Se-IKb">
+            <objects>
+                <viewController id="Rkl-il-G2U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GY6-oS-3l9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="dZY-zu-rsk">
+                                <rect key="frame" x="0.0" y="18" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="High Scores: Easy" id="wCP-hw-IKM">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="9G6-yb-hal">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="Xky-Po-Nqp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Easy" id="yaA-If-9fP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRJ-q7-1rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="1219"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="k5B-05-1fE">
+            <objects>
+                <tabBarController id="gUw-Hz-mDH" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5e7-YD-4zi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Rkl-il-G2U" kind="relationship" relationship="viewControllers" id="Kvb-X9-Spf"/>
+                        <segue destination="Kmu-QL-FRI" kind="relationship" relationship="viewControllers" id="nK7-Hy-t57"/>
+                        <segue destination="Hmf-So-6Wl" kind="relationship" relationship="viewControllers" id="dzz-JS-Yjh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zy-Gu-HI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="1219"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="3El-3x-1ML">
             <objects>
@@ -185,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBe-WZ-8WM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="1062"/>
+            <point key="canvasLocation" x="1136" y="1179"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -194,6 +307,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="yrJ-lB-352"/>
+        <segue reference="Xky-Po-Nqp"/>
     </inferredMetricsTieBreakers>
 </document>
