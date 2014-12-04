@@ -2,4 +2,66 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swiftsweeper/GameBoardViewController.swift"
+            timestampString = "439345858.906792"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "GameBoardViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc Swiftsweeper.GameBoardViewController.__ivar_destroyer"
+                  moduleName = "Swiftsweeper"
+                  urlString = "file:///Users/ryannowacoski/Documents/Development/iOS/Swiftsweeper/Swiftsweeper/GameBoardViewController.swift"
+                  timestampString = "439346050.13406"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swiftsweeper.GameBoardViewController.init (Swiftsweeper.GameBoardViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Swiftsweeper.GameBoardViewController"
+                  moduleName = "Swiftsweeper"
+                  urlString = "file:///Users/ryannowacoski/Documents/Development/iOS/Swiftsweeper/Swiftsweeper/GameBoardViewController.swift"
+                  timestampString = "439346050.134225"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swiftsweeper.GameBoardViewController.init (Swiftsweeper.GameBoardViewController.Type)() -&gt; Swiftsweeper.GameBoardViewController"
+                  moduleName = "Swiftsweeper"
+                  urlString = "file:///Users/ryannowacoski/Documents/Development/iOS/Swiftsweeper/Swiftsweeper/GameBoardViewController.swift"
+                  timestampString = "439346050.134417"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

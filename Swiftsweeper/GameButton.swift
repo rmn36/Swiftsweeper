@@ -17,26 +17,27 @@ class GameButton: UIButton {
         self.tile = tileModel
         self.tileSize = tileSize
         
-        let x = CGFloat(self.tile.col) * tileSize
+        let x = CGFloat(self.tile.column) * tileSize
         let y = CGFloat(self.tile.row) * tileSize
         let tileFrame = CGRectMake(x, y, tileSize, tileSize)
         
         super.init(frame: tileFrame)
     }
     
+    //Just for safety
     required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("not implemented")
     }
     
     func getLabelText() -> String {
         // check the isMineLocation and numNeighboringMines properties to determine the text to display
-        if !self.tile.isMineLocation {
-            if self.tile.numNeighboringMines == 0 {
+        if !self.tile.isMine{
+            if self.tile.numAdjMines == 0 {
                 // case 1: there's no mine and no neighboring mines
                 return ""
             }else {
                 // case 2: there's no mine but there are neighboring mines
-                return "\(self.tile.numNeighboringMines)"
+                return "\(self.tile.numAdjMines)"
             }
         }
         // case 3: there's a mine

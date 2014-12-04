@@ -19,6 +19,7 @@
 		D355A1341A2FA6BF005E171C /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1331A2FA6BF005E171C /* Tile.swift */; };
 		D355A1361A2FA6CD005E171C /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1351A2FA6CD005E171C /* GameBoard.swift */; };
 		D355A1381A2FDFC8005E171C /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1371A2FDFC8005E171C /* GameButton.swift */; };
+		D355A13A1A2FED37005E171C /* mine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D355A1391A2FED37005E171C /* mine.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D355A1331A2FA6BF005E171C /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		D355A1351A2FA6CD005E171C /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		D355A1371A2FDFC8005E171C /* GameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		D355A1391A2FED37005E171C /* mine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mine.jpg; path = ../../../../../Downloads/mine.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		D35000821A26AC8A00336758 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D355A1391A2FED37005E171C /* mine.jpg */,
 				D35000831A26AC8A00336758 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -210,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D355A13A1A2FED37005E171C /* mine.jpg in Resources */,
 				D350008D1A26AC8A00336758 /* Main.storyboard in Resources */,
 				D35000921A26AC8A00336758 /* LaunchScreen.xib in Resources */,
 				D350008F1A26AC8A00336758 /* Images.xcassets in Resources */,

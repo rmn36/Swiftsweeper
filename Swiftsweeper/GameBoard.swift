@@ -8,13 +8,13 @@
 
 import Foundation
 
-class Board {
+class GameBoard {
     // size of the board (size x size)
     let size:Int
     
     //The higher the difficulty the easier the game
     //Number of mines is determined by a 1-out of- difficulty
-    let difficulty:UInt32 = 10
+    let difficulty:UInt32
     
     // a 2d array of tile cells, indexed by [row][column]
     var tiles:[[Tile]] = []
