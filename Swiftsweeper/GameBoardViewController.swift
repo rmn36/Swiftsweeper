@@ -117,6 +117,7 @@ class GameBoardViewController: UIViewController {
     func squareButtonPressed(sender: GameButton) {
         if !sender.tile.isRevealed {
             sender.tile.isRevealed = true
+            //Set text of button
             if sender.getLabelText() == "M" {
                 sender.setTitle("", forState: .Normal)
                 sender.setImage(UIImage(contentsOfFile: "/Users/ryannowacoski/Downloads/mine.jpg"), forState: .Normal)
@@ -125,6 +126,7 @@ class GameBoardViewController: UIViewController {
                 sender.setTitle("\(sender.getLabelText())", forState: .Normal)
             }
             
+            //Set color of text
             if sender.titleLabel?.text == "1"{
                 sender.setTitleColor(UIColor.blueColor(), forState: .Normal)
             }
@@ -134,7 +136,18 @@ class GameBoardViewController: UIViewController {
             else if sender.titleLabel?.text == "3" {
                 sender.setTitleColor(UIColor.redColor(), forState: .Normal)
             }
+            else if sender.titleLabel?.text == "4" {
+                sender.setTitleColor(UIColor.orangeColor(), forState: .Normal)
+            }
+            else if sender.titleLabel?.text == "5" {
+                sender.setTitleColor(UIColor.magentaColor(), forState: .Normal)
+            }
+            else if sender.titleLabel?.text == "6" {
+                sender.setTitleColor(UIColor.cyanColor(), forState: .Normal)
+            }
             
+            
+            //Reveal surrounding blocks
             if sender.getLabelText() == "" {
                 let adjacentOffsets =
                 [(-1,-1),(0,-1),(1,-1), (-1,0),(1,0), (-1,1),(0,1),(1,1)]
@@ -243,6 +256,7 @@ class GameBoardViewController: UIViewController {
             else{
                 t.setTitle("\(t.getLabelText())", forState: .Normal)
             }
+            
             if t.titleLabel?.text == "1"{
                 t.setTitleColor(UIColor.blueColor(), forState: .Normal)
             }
@@ -251,6 +265,15 @@ class GameBoardViewController: UIViewController {
             }
             else if t.titleLabel?.text == "3" {
                 t.setTitleColor(UIColor.redColor(), forState: .Normal)
+            }
+            else if t.titleLabel?.text == "4" {
+                t.setTitleColor(UIColor.orangeColor(), forState: .Normal)
+            }
+            else if t.titleLabel?.text == "5" {
+                t.setTitleColor(UIColor.magentaColor(), forState: .Normal)
+            }
+            else if t.titleLabel?.text == "6" {
+                t.setTitleColor(UIColor.cyanColor(), forState: .Normal)
             }
         }
     }

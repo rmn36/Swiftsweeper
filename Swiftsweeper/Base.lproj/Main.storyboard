@@ -395,6 +395,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="difficultyControl" destination="Uvs-VL-vt1" id="xOu-Ri-bXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBe-WZ-8WM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -408,6 +411,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Lnj-iR-0hj"/>
-        <segue reference="oBW-od-ad8"/>
+        <segue reference="yrJ-lB-352"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var diff:UInt32 = 10
+    var diff:UInt32 = 15
 
     override func viewDidLoad() {
         super.viewDidLoad()
