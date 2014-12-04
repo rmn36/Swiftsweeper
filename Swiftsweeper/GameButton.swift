@@ -44,4 +44,3 @@ class GameButton: UIButton {
     }
     
 }
-}
