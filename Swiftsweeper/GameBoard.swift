@@ -23,11 +23,13 @@ class GameBoard {
     init(size:Int, difficulty:UInt32) {
         self.size = size
         self.difficulty = difficulty
+        var id:Int = 1
         for row in 0 ..< size {
             var tileRow:[Tile] = []
             for column in 0 ..< size {
-                let cell = Tile(row: row, column: column)
+                let cell = Tile(row: row, column: column , id: id)
                 tileRow.append(cell)
+                id++
             }
             tiles.append(tileRow)
         }

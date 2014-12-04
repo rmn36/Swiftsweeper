@@ -121,6 +121,28 @@ class GameBoardViewController: UIViewController {
             else if sender.titleLabel?.text == "3" {
                 sender.setTitleColor(UIColor.redColor(), forState: .Normal)
             }
+            
+            if sender.getLabelText() == "" {
+                let adjacentOffsets =
+                [(-1,-1),(0,-1),(1,-1), (-1,0),(1,0), (-1,1),(0,1),(1,1)]
+            
+                for (rowOffset,columnOffset) in adjacentOffsets {
+                    // getTileAtLocation might return a Tile, or it might return nil, so use the optional datatype "?"
+                    let optionalNeighbor:Tile? = board.getTileAtLocation(sender.tile.row+rowOffset, column: sender.tile.column+columnOffset)
+                    // only evaluates true if the optional tile isn't nil
+                    if let neighbor = optionalNeighbor {
+                        if neighbor.numAdjMines == 0 {
+                            neighbor.isRevealed = true
+                            for g in gameButtons {
+                                if g.tile.id == neighbor.id {
+                                    g.setTitle("", forState: .Normal)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             self.moves++
         }
         

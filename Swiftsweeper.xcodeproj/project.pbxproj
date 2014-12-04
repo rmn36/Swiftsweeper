@@ -50,6 +50,7 @@
 		D355A1351A2FA6CD005E171C /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		D355A1371A2FDFC8005E171C /* GameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		D355A1391A2FED37005E171C /* mine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mine.jpg; path = ../../../../../Downloads/mine.jpg; sourceTree = "<group>"; };
+		D355A13D1A30256F005E171C /* MetalDetector */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = MetalDetector; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 			children = (
 				D350007F1A26AC8A00336758 /* Swiftsweeper.app */,
 				D35000971A26AC8A00336758 /* SwiftsweeperTests.xctest */,
+				D355A13D1A30256F005E171C /* MetalDetector */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +173,21 @@
 			productReference = D35000971A26AC8A00336758 /* SwiftsweeperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D355A13C1A30256F005E171C /* MetalDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D355A1411A30256F005E171C /* Build configuration list for PBXNativeTarget "MetalDetector" */;
+			buildPhases = (
+				D355A13B1A30256F005E171C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalDetector;
+			productName = MetalDetector;
+			productReference = D355A13D1A30256F005E171C /* MetalDetector */;
+			productType = "com.apple.product-type.in-app-purchase-content";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,6 +203,9 @@
 					D35000961A26AC8A00336758 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = D350007E1A26AC8A00336758;
+					};
+					D355A13C1A30256F005E171C = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -204,6 +224,7 @@
 			targets = (
 				D350007E1A26AC8A00336758 /* Swiftsweeper */,
 				D35000961A26AC8A00336758 /* SwiftsweeperTests */,
+				D355A13C1A30256F005E171C /* MetalDetector */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +242,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D35000951A26AC8A00336758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D355A13B1A30256F005E171C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,6 +444,30 @@
 			};
 			name = Release;
 		};
+		D355A1421A30256F005E171C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MetalDetector/ContentInfo.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/InAppPurchaseContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = "";
+			};
+			name = Debug;
+		};
+		D355A1431A30256F005E171C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MetalDetector/ContentInfo.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/InAppPurchaseContent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +497,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D355A1411A30256F005E171C /* Build configuration list for PBXNativeTarget "MetalDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D355A1421A30256F005E171C /* Debug */,
+				D355A1431A30256F005E171C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
