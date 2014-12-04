@@ -69,8 +69,8 @@ class GameBoardViewController: UIViewController {
     
     func initializeBoard() {
         for row in 0 ..< board.size {
-            for col in 0 ..< board.size {
-                let tile = board.tiles[row][col]
+            for column in 0 ..< board.size {
+                let tile = board.tiles[row][column]
                 let tileSize:CGFloat = self.boardView.frame.width / CGFloat(BOARD_SIZE)
                 let gameButton = GameButton(tileModel: tile, tileSize: tileSize);
                 gameButton.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
@@ -87,8 +87,10 @@ class GameBoardViewController: UIViewController {
         // iterates through each button and resets the text to the default value
         for tileButton in self.gameButtons {
             tileButton.setTitle("[x]", forState: .Normal)
+            tileButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: CGFloat(Float(BOARD_SIZE)/1.5))
             tileButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
             tileButton.setImage(nil, forState: .Normal)
+            
         }
     }
     

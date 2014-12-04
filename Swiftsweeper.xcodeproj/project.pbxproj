@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D35000851A26AC8A00336758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35000841A26AC8A00336758 /* AppDelegate.swift */; };
-		D35000881A26AC8A00336758 /* Swiftsweeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D35000861A26AC8A00336758 /* Swiftsweeper.xcdatamodeld */; };
 		D350008A1A26AC8A00336758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35000891A26AC8A00336758 /* ViewController.swift */; };
 		D350008D1A26AC8A00336758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D350008B1A26AC8A00336758 /* Main.storyboard */; };
 		D350008F1A26AC8A00336758 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D350008E1A26AC8A00336758 /* Images.xcassets */; };
@@ -20,6 +19,7 @@
 		D355A1361A2FA6CD005E171C /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1351A2FA6CD005E171C /* GameBoard.swift */; };
 		D355A1381A2FDFC8005E171C /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1371A2FDFC8005E171C /* GameButton.swift */; };
 		D355A13A1A2FED37005E171C /* mine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D355A1391A2FED37005E171C /* mine.jpg */; };
+		D355A1461A303841005E171C /* HighScores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D355A1441A303841005E171C /* HighScores.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 		D350007F1A26AC8A00336758 /* Swiftsweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftsweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35000831A26AC8A00336758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35000841A26AC8A00336758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D35000871A26AC8A00336758 /* Swiftsweeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swiftsweeper.xcdatamodel; sourceTree = "<group>"; };
 		D35000891A26AC8A00336758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D350008C1A26AC8A00336758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D350008E1A26AC8A00336758 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		D355A1371A2FDFC8005E171C /* GameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		D355A1391A2FED37005E171C /* mine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mine.jpg; path = ../../../../../Downloads/mine.jpg; sourceTree = "<group>"; };
 		D355A13D1A30256F005E171C /* MetalDetector */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = MetalDetector; sourceTree = BUILT_PRODUCTS_DIR; };
+		D355A1451A303841005E171C /* HighScores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HighScores.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 				D35000A71A26B02E00336758 /* SettingsViewController.swift */,
 				D350008B1A26AC8A00336758 /* Main.storyboard */,
 				D350008E1A26AC8A00336758 /* Images.xcassets */,
+				D355A1441A303841005E171C /* HighScores.xcdatamodeld */,
 				D35000901A26AC8A00336758 /* LaunchScreen.xib */,
-				D35000861A26AC8A00336758 /* Swiftsweeper.xcdatamodeld */,
 				D35000821A26AC8A00336758 /* Supporting Files */,
 			);
 			path = Swiftsweeper;
@@ -265,10 +265,10 @@
 				D350008A1A26AC8A00336758 /* ViewController.swift in Sources */,
 				D355A1381A2FDFC8005E171C /* GameButton.swift in Sources */,
 				D35000851A26AC8A00336758 /* AppDelegate.swift in Sources */,
-				D35000881A26AC8A00336758 /* Swiftsweeper.xcdatamodeld in Sources */,
 				D355A1361A2FA6CD005E171C /* GameBoard.swift in Sources */,
 				D355A1341A2FA6BF005E171C /* Tile.swift in Sources */,
 				D355A1321A2FA2F0005E171C /* GameBoardViewController.swift in Sources */,
+				D355A1461A303841005E171C /* HighScores.xcdatamodeld in Sources */,
 				D35000A81A26B02E00336758 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,13 +509,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D35000861A26AC8A00336758 /* Swiftsweeper.xcdatamodeld */ = {
+		D355A1441A303841005E171C /* HighScores.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D35000871A26AC8A00336758 /* Swiftsweeper.xcdatamodel */,
+				D355A1451A303841005E171C /* HighScores.xcdatamodel */,
 			);
-			currentVersion = D35000871A26AC8A00336758 /* Swiftsweeper.xcdatamodel */;
-			path = Swiftsweeper.xcdatamodeld;
+			currentVersion = D355A1451A303841005E171C /* HighScores.xcdatamodel */;
+			path = HighScores.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
