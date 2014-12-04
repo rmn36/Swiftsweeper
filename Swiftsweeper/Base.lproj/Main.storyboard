@@ -195,6 +195,9 @@
                                     <segment title="Medium"/>
                                     <segment title="Hard"/>
                                 </segments>
+                                <connections>
+                                    <action selector="didChangeDifficulty:" destination="WDg-r2-PwS" eventType="valueChanged" id="Bhb-UH-CmL"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

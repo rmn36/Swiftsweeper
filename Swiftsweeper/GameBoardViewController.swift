@@ -15,7 +15,7 @@ class GameBoardViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     
     var BOARD_SIZE:Int = 10
-    var DIFFICULTY:UInt32 = 5
+    var DIFFICULTY:UInt32 = 10
     var board:GameBoard
     var gameButtons:[GameButton] = []
     
@@ -42,11 +42,17 @@ class GameBoardViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.initializeBoard()
         self.startNewGame()
+        println(DIFFICULTY)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destinationVC = segue.destinationViewController as ViewController
+        destinationVC.diff = self.DIFFICULTY
     }
     
     //MARK: Initialize!
