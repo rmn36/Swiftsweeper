@@ -16,7 +16,7 @@ class GameBoardViewController: UIViewController {
     
     var BOARD_SIZE:Int = 10
     var DIFFICULTY:UInt32 = 10
-    var board:GameBoard
+    var board:GameBoard = GameBoard(size:10 , difficulty: 10)
     var gameButtons:[GameButton] = []
     
     var moves:Int = 0 {
@@ -40,9 +40,10 @@ class GameBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        println(DIFFICULTY)
+        self.board = GameBoard(size: BOARD_SIZE , difficulty: DIFFICULTY)
         self.initializeBoard()
         self.startNewGame()
-        println(DIFFICULTY)
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,7 +58,6 @@ class GameBoardViewController: UIViewController {
     
     //MARK: Initialize!
     required init(coder aDecoder: NSCoder) {
-        self.board = GameBoard(size: BOARD_SIZE , difficulty: DIFFICULTY)
         super.init(coder: aDecoder)
     }
     

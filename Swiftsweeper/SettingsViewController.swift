@@ -10,8 +10,10 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     var diff:UInt32 = 10
-    var size:Int = 10
-
+    
+    
+    @IBOutlet weak var sizeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,7 +28,6 @@ class SettingsViewController: UIViewController {
         
         let destinationVC = segue.destinationViewController as ViewController
         destinationVC.diff = self.diff
-        destinationVC.size = self.size
     }
     
     @IBAction func didChangeDifficulty(sender: UISegmentedControl) {
@@ -36,11 +37,11 @@ class SettingsViewController: UIViewController {
         else if sender.selectedSegmentIndex == 1 {
             diff = 6 //medium
         }
-        else if sender.selectedSegmentIndex == 0 {
+        else if sender.selectedSegmentIndex == 2 {
             diff = 3 //hard
         }
         else {
-            diff = 1 //literally impossible
+            diff = 0 //literally impossible
         }
     }
 }

@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     var diff:UInt32 = 10
-    var size:Int = 10
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +25,10 @@ class ViewController: UIViewController {
         if segue.destinationViewController.isKindOfClass(GameBoardViewController){
             let destinationVC = segue.destinationViewController as GameBoardViewController
             destinationVC.DIFFICULTY = self.diff
-            destinationVC.BOARD_SIZE = self.size
         }
         else if segue.destinationViewController.isKindOfClass(SettingsViewController){
             let destinationVC = segue.destinationViewController as SettingsViewController
             destinationVC.diff = self.diff
-            destinationVC.size = self.size
         }
     }
 
