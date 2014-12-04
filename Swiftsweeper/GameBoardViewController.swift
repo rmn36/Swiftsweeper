@@ -88,7 +88,6 @@ class GameBoardViewController: UIViewController {
         // iterates through each button and resets the text to the default value
         for tileButton in self.gameButtons {
             tileButton.setTitle("[x]", forState: .Normal)
-            tileButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: CGFloat(Float(BOARD_SIZE)/1.5))
             tileButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
             tileButton.setImage(nil, forState: .Normal)
             
@@ -149,9 +148,28 @@ class GameBoardViewController: UIViewController {
             self.moves++
         }
         
+        if checkWin() {
+            // show an alert when you tap on a mine
+            var alertView = UIAlertView()
+            alertView.addButtonWithTitle("New Game")
+            alertView.title = "YOU WIN!"
+            alertView.message = "You successful avoided all mines"
+            alertView.show()
+            alertView.delegate = self
+        }
+        
         if sender.tile.isMine {
             self.minePressed()
         }
+    }
+    
+    func checkWin() -> Bool{
+        for g in gameButtons {
+            if g.tile.isMine == false && g.tile.isRevealed == false {
+                return false
+            }
+        }
+        return true
     }
     
     func minePressed() {
