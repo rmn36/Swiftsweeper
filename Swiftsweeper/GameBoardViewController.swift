@@ -38,6 +38,16 @@ class GameBoardViewController: UIViewController {
         self.timeTaken++
     }
     
+    lazy var managedObjectContext : NSManagedObjectContext? = {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        if let managedObjectContext = appDelegate.managedObjectContext {
+            return managedObjectContext
+        }
+        else {
+            return nil
+        }
+        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -46,6 +56,7 @@ class GameBoardViewController: UIViewController {
         self.initializeBoard()
         self.startNewGame()
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -149,6 +160,24 @@ class GameBoardViewController: UIViewController {
         }
         
         if checkWin() {
+            //Store score
+            let newItem = NSEntityDescription.insertNewObjectForEntityForName("Score", inManagedObjectContext: self.managedObjectContext!) as Score
+            
+            newItem.time = self.timeTaken
+            newItem.moves = self.moves
+            if DIFFICULTY == 10 {
+                newItem.difficulty = "Easy"
+            }
+            else if DIFFICULTY == 6 {
+                newItem.difficulty = "Medium"
+            }
+            else if DIFFICULTY == 3 {
+                newItem.difficulty = "Hard"
+            }
+            else{
+                newItem.difficulty = "RIDICULOUS"
+            }
+            
             // show an alert when you tap on a mine
             var alertView = UIAlertView()
             alertView.addButtonWithTitle("New Game")

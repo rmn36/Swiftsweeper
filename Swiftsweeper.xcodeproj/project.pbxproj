@@ -20,6 +20,7 @@
 		D355A1381A2FDFC8005E171C /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1371A2FDFC8005E171C /* GameButton.swift */; };
 		D355A13A1A2FED37005E171C /* mine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D355A1391A2FED37005E171C /* mine.jpg */; };
 		D355A1461A303841005E171C /* HighScores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D355A1441A303841005E171C /* HighScores.xcdatamodeld */; };
+		D39916C71A3050D800582BA6 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39916C61A3050D800582BA6 /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D355A1391A2FED37005E171C /* mine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mine.jpg; path = ../../../../../Downloads/mine.jpg; sourceTree = "<group>"; };
 		D355A13D1A30256F005E171C /* MetalDetector */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = MetalDetector; sourceTree = BUILT_PRODUCTS_DIR; };
 		D355A1451A303841005E171C /* HighScores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HighScores.xcdatamodel; sourceTree = "<group>"; };
+		D39916C61A3050D800582BA6 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D350008B1A26AC8A00336758 /* Main.storyboard */,
 				D350008E1A26AC8A00336758 /* Images.xcassets */,
 				D355A1441A303841005E171C /* HighScores.xcdatamodeld */,
+				D39916C61A3050D800582BA6 /* Score.swift */,
 				D35000901A26AC8A00336758 /* LaunchScreen.xib */,
 				D35000821A26AC8A00336758 /* Supporting Files */,
 			);
@@ -269,6 +272,7 @@
 				D355A1341A2FA6BF005E171C /* Tile.swift in Sources */,
 				D355A1321A2FA2F0005E171C /* GameBoardViewController.swift in Sources */,
 				D355A1461A303841005E171C /* HighScores.xcdatamodeld in Sources */,
+				D39916C71A3050D800582BA6 /* Score.swift in Sources */,
 				D35000A81A26B02E00336758 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +509,7 @@
 				D355A1431A30256F005E171C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
