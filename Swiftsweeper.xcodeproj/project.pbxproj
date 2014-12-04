@@ -18,6 +18,7 @@
 		D355A1321A2FA2F0005E171C /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1311A2FA2F0005E171C /* GameBoardViewController.swift */; };
 		D355A1341A2FA6BF005E171C /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1331A2FA6BF005E171C /* Tile.swift */; };
 		D355A1361A2FA6CD005E171C /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1351A2FA6CD005E171C /* GameBoard.swift */; };
+		D355A1381A2FDFC8005E171C /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1371A2FDFC8005E171C /* GameButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D355A1311A2FA2F0005E171C /* GameBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
 		D355A1331A2FA6BF005E171C /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		D355A1351A2FA6CD005E171C /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		D355A1371A2FDFC8005E171C /* GameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				D35000841A26AC8A00336758 /* AppDelegate.swift */,
-				D35000891A26AC8A00336758 /* ViewController.swift */,
-				D355A1311A2FA2F0005E171C /* GameBoardViewController.swift */,
-				D350008B1A26AC8A00336758 /* Main.storyboard */,
 				D355A1331A2FA6BF005E171C /* Tile.swift */,
 				D355A1351A2FA6CD005E171C /* GameBoard.swift */,
+				D355A1371A2FDFC8005E171C /* GameButton.swift */,
+				D35000891A26AC8A00336758 /* ViewController.swift */,
+				D355A1311A2FA2F0005E171C /* GameBoardViewController.swift */,
 				D35000A71A26B02E00336758 /* SettingsViewController.swift */,
+				D350008B1A26AC8A00336758 /* Main.storyboard */,
 				D350008E1A26AC8A00336758 /* Images.xcassets */,
 				D35000901A26AC8A00336758 /* LaunchScreen.xib */,
 				D35000861A26AC8A00336758 /* Swiftsweeper.xcdatamodeld */,
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D350008A1A26AC8A00336758 /* ViewController.swift in Sources */,
+				D355A1381A2FDFC8005E171C /* GameButton.swift in Sources */,
 				D35000851A26AC8A00336758 /* AppDelegate.swift in Sources */,
 				D35000881A26AC8A00336758 /* Swiftsweeper.xcdatamodeld in Sources */,
 				D355A1361A2FA6CD005E171C /* GameBoard.swift in Sources */,

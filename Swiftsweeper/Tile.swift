@@ -10,17 +10,18 @@ import Foundation
 
 class Tile {
     //Static properties containing where the tile is
-    let row:Int;
-    let column:Int;
+    let row:Int
+    let column:Int
     
     //Variable properties about tiles state
-    var numAdjMines = 0;
-    var isMine = false;
-    var isRevealed = false;
+    //These values are defaults and will be reassigned upon the start of a new game
+    var numAdjMines = 0
+    var isMine = false
+    var isRevealed = false
     
     //Standard Initializer
     init(row:Int, column:Int) {
-        self.row = row;
-        self.column = column;
+        self.row = row
+        self.column = column
     }
 }
