@@ -15,13 +15,13 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var difficultyControl: UISegmentedControl!
     
     override func viewDidLoad() {
-        if diff == 10 {
+        if diff == 15 {
             difficultyControl.selectedSegmentIndex = 0
         }
         else if diff == 6 {
             difficultyControl.selectedSegmentIndex = 1
         }
-        else if diff == 3 {
+        else if diff == 2 {
             difficultyControl.selectedSegmentIndex = 2
         }
         super.viewDidLoad()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D346D0931A3A083B007407EF /* mine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D346D0921A3A083B007407EF /* mine.jpg */; };
 		D35000851A26AC8A00336758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35000841A26AC8A00336758 /* AppDelegate.swift */; };
 		D350008A1A26AC8A00336758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35000891A26AC8A00336758 /* ViewController.swift */; };
 		D350008D1A26AC8A00336758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D350008B1A26AC8A00336758 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		D355A1341A2FA6BF005E171C /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1331A2FA6BF005E171C /* Tile.swift */; };
 		D355A1361A2FA6CD005E171C /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1351A2FA6CD005E171C /* GameBoard.swift */; };
 		D355A1381A2FDFC8005E171C /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355A1371A2FDFC8005E171C /* GameButton.swift */; };
-		D355A13A1A2FED37005E171C /* mine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D355A1391A2FED37005E171C /* mine.jpg */; };
 		D355A1461A303841005E171C /* HighScores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D355A1441A303841005E171C /* HighScores.xcdatamodeld */; };
 		D39916C71A3050D800582BA6 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39916C61A3050D800582BA6 /* Score.swift */; };
 		D39916FE1A3055BB00582BA6 /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39916FD1A3055BB00582BA6 /* HighScoreViewController.swift */; };
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D346D0921A3A083B007407EF /* mine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mine.jpg; sourceTree = "<group>"; };
 		D350007F1A26AC8A00336758 /* Swiftsweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftsweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35000831A26AC8A00336758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35000841A26AC8A00336758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		D355A1331A2FA6BF005E171C /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		D355A1351A2FA6CD005E171C /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		D355A1371A2FDFC8005E171C /* GameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
-		D355A1391A2FED37005E171C /* mine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mine.jpg; path = ../../../../../Downloads/mine.jpg; sourceTree = "<group>"; };
 		D355A13D1A30256F005E171C /* MetalDetector */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = MetalDetector; sourceTree = BUILT_PRODUCTS_DIR; };
 		D355A1451A303841005E171C /* HighScores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HighScores.xcdatamodel; sourceTree = "<group>"; };
 		D39916C61A3050D800582BA6 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		D35000821A26AC8A00336758 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D355A1391A2FED37005E171C /* mine.jpg */,
+				D346D0921A3A083B007407EF /* mine.jpg */,
 				D35000831A26AC8A00336758 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -240,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D355A13A1A2FED37005E171C /* mine.jpg in Resources */,
+				D346D0931A3A083B007407EF /* mine.jpg in Resources */,
 				D350008D1A26AC8A00336758 /* Main.storyboard in Resources */,
 				D35000921A26AC8A00336758 /* LaunchScreen.xib in Resources */,
 				D350008F1A26AC8A00336758 /* Images.xcassets in Resources */,

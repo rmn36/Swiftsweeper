@@ -85,7 +85,7 @@ class GameBoardViewController: UIViewController {
                 let tileSize:CGFloat = self.boardView.frame.width / CGFloat(BOARD_SIZE)
                 let gameButton = GameButton(tileModel: tile, tileSize: tileSize);
                 gameButton.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-                gameButton.addTarget(self, action: "squareButtonPressed:", forControlEvents: .TouchUpInside)
+                gameButton.addTarget(self, action: "tileButtonPressed:", forControlEvents: .TouchUpInside)
                 self.boardView.addSubview(gameButton)
                 self.gameButtons.append(gameButton)
             }
@@ -114,7 +114,7 @@ class GameBoardViewController: UIViewController {
     }
     
     //MARK: Button Actions
-    func squareButtonPressed(sender: GameButton) {
+    func tileButtonPressed(sender: GameButton) {
         if !sender.tile.isRevealed {
             sender.tile.isRevealed = true
             //Set text of button
@@ -178,13 +178,13 @@ class GameBoardViewController: UIViewController {
             
             newItem.time = self.timeTaken
             newItem.moves = self.moves
-            if DIFFICULTY == 10 {
+            if DIFFICULTY == 15 {
                 newItem.difficulty = "Easy"
             }
             else if DIFFICULTY == 6 {
                 newItem.difficulty = "Medium"
             }
-            else if DIFFICULTY == 3 {
+            else if DIFFICULTY == 2 {
                 newItem.difficulty = "Hard"
             }
             else{
@@ -251,7 +251,7 @@ class GameBoardViewController: UIViewController {
             t.tile.isRevealed = true
             if t.getLabelText() == "M" {
                 t.setTitle("", forState: .Normal)
-                t.setImage(UIImage(contentsOfFile: "/Users/ryannowacoski/Downloads/mine.jpg"), forState: .Normal)
+                t.setImage(UIImage(contentsOfFile: "~/Swiftsweeper/Swiftsweeper/mine.jpg"), forState: .Normal)
             }
             else{
                 t.setTitle("\(t.getLabelText())", forState: .Normal)
